@@ -17,7 +17,7 @@ setTextAreaValue(value)
   const handleChecked=(event)=>{
 const{value,checked}=event.target
 if(checked){
-  setCheckBox(...checkbox,value)
+  setCheckBox((checkbox)=>[...checkbox,value])
 }
 else{
   setCheckBox(checkbox.filter(option=>option!==value))
